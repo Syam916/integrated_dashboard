@@ -155,5 +155,9 @@ def update_charts_and_metrics(selected_topic, selected_source):
     return pie_fig, bar_fig, total_metric, yes_metric, no_metric, maybe_metric
 
 # Run the Dash app
+# Run the Dash app
 if __name__ == '__main__':
     app.run_server()
+
+# Expose Flask server for Render deployment
+server = app.server
